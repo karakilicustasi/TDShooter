@@ -22,7 +22,7 @@ public class Shooting : MonoBehaviour
 		rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
 		StartCoroutine(camera.Shake(.1f,.1f));
 	}
-
+	//naber baptın
 
 
 }
