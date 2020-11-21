@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerScript : MonoBehaviour
 {
 	Rigidbody2D body;
+	
 	float horizontal;
 	float vertical;
 	Vector2 mousePos;
@@ -29,5 +30,6 @@ public class PlayerScript : MonoBehaviour
 		Vector2 lookDir = mousePos - body.position;
 		float angle = Mathf.Atan2(lookDir.y,lookDir.x)*Mathf.Rad2Deg - 90f;
 		body.rotation = angle;
+	
 	}
 }
